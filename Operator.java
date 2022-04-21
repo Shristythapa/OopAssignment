@@ -1,4 +1,4 @@
-class QnOne {
+class QuestionOne {
     public static void main(String[] args){
         int age=19;
         String result;
@@ -6,7 +6,7 @@ class QnOne {
         System.out.println(result);
     }
 }
-class QnTwoB{
+class QuestionTwoB{
     public static void main(String[] args){
         int b=5;
         int h=10;
@@ -15,7 +15,7 @@ class QnTwoB{
         System.out.println(area);
     }
 }
-class QnTwoC{
+class QuestionTwoC{
     public static void main(String[] args){
         int l=5;
         int area;
@@ -23,7 +23,7 @@ class QnTwoC{
         System.out.println(area);
     }
 }
-class QnTwoA{
+class QuestionTwoA{
     public static void main(String[] args){
         int p = 40000;
         int t = 120;
@@ -33,7 +33,7 @@ class QnTwoA{
         System.out.println(SI);
     }
 }
-class QnThree {
+class QuestionThree {
     public static void main(String[] args){
         int age=19;
         String result;
@@ -41,7 +41,7 @@ class QnThree {
         System.out.println(result);
     }
 }
-class QnFour{
+class QuestionFour{
     public static void main (String[] args){
         int firstSub= 70;
         int secondSub = 85;
