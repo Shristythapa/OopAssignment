@@ -450,18 +450,31 @@ class Question20 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        double HRA ,DA ,gross ;
+
         System.out.print("Enter the salary: ");
-        int salary = scanner.nextInt();
+        double salary = scanner.nextInt();
 
         if(salary<=10000){
-            System.out.println("HRA=20%\nDA=80%");
+            HRA=salary*20/100;
+            DA=salary*80/100;
+            gross=salary+HRA+DA;
+            System.out.println("Your gross salary is "+gross+".");
+
         }
         else if(salary<=20000){
-            System.out.println("HRA=25%\nDA=90%");
+            HRA=salary*25/100;
+            DA=salary*90/100;
+            gross=salary+HRA+DA;
+            System.out.println("Your gross salary is "+gross+".");
         }
         else if(salary>20000){
-            System.out.println("HRA=30%\nDA=95%");
+            HRA=salary*30/100;
+            DA=salary*95/100;
+            gross=salary+HRA+DA;
+            System.out.println("Your gross salary is "+gross+".");
         }
+        
     }
 }
 
