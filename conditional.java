@@ -138,15 +138,12 @@ class Question8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the character.");
-        String a;
-        a = scanner.next();
-        String v= "aeiou";
-        if(v.contains(a)){
-            System.out.println("The number is a vowel.");
-        }
-        else {
-            System.out.println("The number is a consonant");
-        }
+        char ch = scanner.next().charAt(0);
+
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' )
+            System.out.println(ch + " is vowel");
+        else
+            System.out.println(ch + " is consonant");
     }
 }
 class Question9 {
@@ -305,9 +302,7 @@ class Question13 {
         System.out.print("Enter the total amount: ");
         amt= scanner.nextInt();
 
-        int notes = amt/val;
-
-        System.out.println("The number of notes are "+notes+".");
+        if(val==5)
     }
 }
 class Question14 {
@@ -323,7 +318,7 @@ class Question14 {
         System.out.println("Enter the degree of third angle: ");
         int c = scanner.nextInt();
 
-        if ((a+b>c)||(a+c>b)&&(b+c>a)){
+        if ((a+b>c)||(a+c>b)||(b+c>a)){
             System.out.println("The triangle is valid");
         }
         else {
@@ -414,7 +409,7 @@ class Question17{
 
 
             System.out.format("root1=%2f+%2f",real,imaginary);
-            System.out.format("\nroot2=%2f")
+            System.out.format("\nroot2=%2f");
         }
     }
 }
